@@ -1,17 +1,18 @@
 "use client";
+
 import { navLinks } from "@/constans";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
-
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
 
 const Sidebar = () => {
   const pathname = usePathname();
+
   return (
     <aside className="sidebar">
-      <div className="flex size-full flex-col gap-4 ">
+      <div className="flex size-full flex-col gap-4">
         <Link href="/" className="sidebar-logo">
           <Image
             src="/assets/images/logo-text.svg"
@@ -94,4 +95,5 @@ const Sidebar = () => {
     </aside>
   );
 };
+
 export default Sidebar;

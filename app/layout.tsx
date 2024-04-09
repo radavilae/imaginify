@@ -13,7 +13,7 @@ const IBMPlex = IBM_Plex_Sans({
 
 export const metadata: Metadata = {
   title: "Imaginify",
-  description: "AI-powered image generation",
+  description: "AI-powered image generator",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider
-      appearence={{
+      appearance={{
         variables: { colorPrimary: "#624cf5" },
       }}
     >

@@ -1,4 +1,5 @@
 "use client";
+
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navLinks } from "@/constans";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
@@ -85,4 +86,5 @@ const MobileNav = () => {
     </header>
   );
 };
+
 export default MobileNav;
